@@ -1,0 +1,237 @@
+body {
+  background: white;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+
+  background-size: cover;
+/* Center the background image */
+background-position: center;
+/* Fix background image */
+background-attachment: fixed;
+   font-family: "PT Sans", sans-serif;
+    
+  font-style: italic;
+   
+}
+@media only screen and (max-width: 800px) {
+body {
+overflow-x: hidden; /* Prevent horizontal scrolling */
+
+  background-size: cover;
+/* Center the background image */
+background-position: center;
+/* Fix background image */
+background-attachment: fixed;
+   font-family: "PT Sans", sans-serif;
+    
+  font-style: italic;
+}
+}
+.reservation {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  padding: 2px;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+}
+@media (max-width: 800px) {
+.reservation {
+flex-direction: column;
+}
+}
+
+
+
+
+
+
+.reservation p {
+  margin: 5px 0;
+}
+
+hr {
+  margin: 10px 0;
+}
+.status {
+font-weight: bold;
+}  
+
+.rating {
+display: inline-block;
+background-color: rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(10px);
+border-radius: 5px;
+
+}
+
+.rating input {
+display: none;
+}
+
+.rating label {
+float: right;
+cursor: pointer;
+color: #ccc;
+transition: color 0.3s;
+}
+
+.rating label:before {
+content: '\2605';
+font-size: 30px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+color: #6f00ff;
+transition: color 0.3s;
+} 
+
+.button-45 {
+align-items: center;
+margin-left: 50%; /* Set margin-left to 50% */
+    transform: translateX(-50%);
+background-color: #FFE7E7;
+background-position: 0 0;
+border: 1px solid #FEE0E0;
+border-radius: 11px;
+box-sizing: border-box;
+color: #D33A2C;
+cursor: pointer;
+display: flex;
+font-size: 1rem;
+font-weight: 700;
+line-height: 33.4929px;
+list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+padding: 2px 12px;
+text-align: center;
+text-decoration: none;
+text-shadow: none;
+text-underline-offset: 1px;
+transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+white-space: nowrap;
+word-break: break-word;
+margin-top: 20px;
+justify-content: center; 
+}
+
+.button-45:active,
+.button-45:hover,
+.button-45:focus {
+outline: 0;
+}
+
+
+.button-45:active {
+background-color: #D33A2C;
+box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+color: #FFFFFF;
+}
+
+.button-45:hover {
+background-color: #FFE3E3;
+border-color: #FAA4A4;
+}
+
+.button-45:active:hover,
+.button-45:focus:hover,
+.button-45:focus {
+background-color: #D33A2C;
+box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+color: #FFFFFF;
+}
+
+.ocenidugme {
+background: #fff;
+border: 1px solid black;
+padding: 8px 20px;
+display: inline-block;
+font-size: 15px;
+font-weight: 600;
+width: 120px;
+text-transform: uppercase;
+cursor: pointer;
+transform: skew(-21deg);
+}
+
+.ocenidugme span {
+display: inline-block;
+transform: skew(21deg);
+}
+
+.ocenidugme::before {
+content: '';
+position: absolute;
+top: 0;
+bottom: 0;
+right: 100%;
+left: 0;
+background: #6f00ff;
+opacity: 0;
+z-index: -1;
+transition: all 0.5s;
+}
+
+.ocenidugme:hover {
+color: #fff;
+}
+
+.ocenidugme:hover::before {
+left: 0;
+right: 0;
+opacity: 1;
+}
+.button1 {
+margin: 0;
+height: auto;
+background: transparent;
+padding: 0;
+border: none;
+cursor: pointer;
+}
+
+/* button styling */
+.button1 {
+--border-right: 6px;
+--text-stroke-color: rgba(255,255,255,0.6);
+--animation-color: #FF2DA9;
+--fs-size: 1em;
+letter-spacing: 3px;
+text-decoration: none;
+font-size: var(--fs-size);
+font-family: "Arial";
+position: relative;
+text-transform: uppercase;
+color: transparent;
+-webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+position: absolute;
+box-sizing: border-box;
+content: attr(data-text);
+color: var(--animation-color);
+width: 0%;
+inset: 0;
+border-right: var(--border-right) solid var(--animation-color);
+overflow: hidden;
+transition: 0.5s;
+-webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button1:hover .hover-text {
+width: 100%;
+filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+.rank{
+margin-left: auto;
+color: white;
+
+}
+

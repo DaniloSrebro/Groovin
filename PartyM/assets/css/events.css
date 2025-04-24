@@ -1,0 +1,60 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.breadcrumbs{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+
+.main h1 {
+    font-size: 36px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.main h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.event, .food-item, .restaurant, .review {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.event h3, .food-item h3, .restaurant h3, .review h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event p, .food-item p, .restaurant p, .review p {
+    color: #666;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+

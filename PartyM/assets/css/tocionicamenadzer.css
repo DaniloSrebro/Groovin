@@ -1,0 +1,813 @@
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background: url(../assets/img/pozadinamenadzer.jpg);
+    background-size: cover;
+/* Center the background image */
+background-position: center;
+/* Fix background image */
+background-attachment: fixed;
+     font-family: "PT Sans", sans-serif;
+      
+    font-style: italic;
+     
+}
+@media only screen and (max-width: 800px) {
+body {
+overflow-x: hidden; /* Prevent horizontal scrolling */
+    background: url(../assets/img/pozadinamenadzer.jpg);
+    background-size: cover;
+/* Center the background image */
+background-position: center;
+/* Fix background image */
+background-attachment: fixed;
+     font-family: "PT Sans", sans-serif;
+      
+    font-style: italic;
+}
+}
+.reservation-form {
+max-width: 600px;
+margin: 0 auto;
+padding: 10px;
+background-color: #f8f9fa;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+font-family: Arial, sans-serif;
+}
+
+.form-group {
+margin-bottom: 2px;
+}
+
+.form-control {
+width: 100%;
+padding: 2px;
+border: 1px solid #ced4da;
+border-radius: 4px;
+font-size: 16px;
+color: #495057;
+}
+
+.form-control:focus {
+border-color: #80bdff;
+outline: 0;
+box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.form-label, .form-check-label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+color: #343a40;
+}
+
+.form-check {
+margin-bottom: 10px;
+}
+
+.form-check-input {
+margin-right: 5px;
+}
+
+.select-arrow {
+pointer-events: none;
+position: absolute;
+top: 50%;
+right: 15px;
+margin-top: -3px;
+width: 0;
+height: 0;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-top: 5px solid #007bff;
+}
+
+.subdugme {
+display: block;
+width: auto;
+padding: 10px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 18px;
+}
+
+.subdugme:hover {
+background-color: #0056b3;
+}
+
+
+.reservation-table {
+width: 100%; /* Ensures the table is responsive */
+max-width: 600px; /* Maximum width to maintain readability */
+margin: 20px auto; /* Centers the table with vertical spacing */
+border-collapse: separate;
+border-spacing: 0;
+box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+border-radius: 8px; /* Rounded corners */
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+overflow: hidden; /* Keeps the shadow and rounded corners */
+}
+
+.reservation-table th, .reservation-table td {
+padding: 8px 10px; /* Reduced padding for space efficiency */
+border: none;
+text-align: center; /* Aligns text to the left */
+border-bottom: 1px solid #ddd; /* Subtle line between rows */
+font-size: 18px; /* Slightly reduced font size */
+}
+
+
+.reservation-table th {
+background-color: #f5f5f5;
+color: #333;
+font-size: 16px; /* Adjusted for better readability */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 480px) {
+.reservation-table th, .reservation-table td {
+padding: 6px; /* Even smaller padding for very small screens */
+font-size: 12px; /* Smaller font size for space and readability */
+}
+
+.reservation-table {
+box-shadow: none; /* Optional: removes shadow on very small screens for a flatter design */
+}
+
+.reservation-table th {
+font-size: 12px; /* Ensures headers are not too large on small screens */
+}
+}
+
+.reservation-table tr:last-child td {
+border-bottom: none;
+}
+
+.reservation-table tr:hover {
+background-color: #f9f9f9; /* Light grey to indicate hover state */
+}
+
+/* Rounded corners for the first and last header cells */
+.reservation-table th:first-child {
+border-top-left-radius: 8px;
+}
+
+.reservation-table th:last-child {
+border-top-right-radius: 8px;
+}
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+
+
+.reservation-table th, .reservation-table td {
+font-size: 10px; /* Increase font size for readability */
+}
+
+.column-actions {
+flex-direction: column;
+text-align: center; /* Stack actions vertically on small screens */
+}
+}
+@media (max-width: 1500px) {
+
+
+.reservation-table th {
+font-size: 13px;
+padding: 0px; /* Increase font size for readability */
+}
+.reservation-table td{
+    font-size: 15px;
+    padding: 0px;
+}
+
+.column-actions {
+flex-direction: column;
+text-align: center; /* Stack actions vertically on small screens */
+}
+}
+
+.approve-button {
+background-color: #4CAF50; 
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 5px;
+}
+.approve-button:hover {
+background-color: #45a049;
+}
+
+
+
+.reject-button {
+background-color: #C70039 ; 
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+
+.reject-button:hover {
+background-color: #942209;
+}
+
+@media (max-width: 768px) {
+.approve-button, .reject-button {
+padding: 10px 15px; /* Adjust padding */
+font-size: 0.9em; /* Adjust font size for smaller screens */
+margin: 3px 1px; /* Adjust margins */
+}
+}
+
+.deleted-button {
+background-color: black ; 
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+
+.deleted-button:hover {
+background-color: #942209;
+}
+
+.no-reservation {
+color: white;
+font-style: italic;
+}
+.container2 {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+.button1 {
+align-items: center;
+background-color: transparent;
+color: black;
+cursor: pointer;
+display: flex;
+font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+font-size: 1rem;
+font-weight: 700;
+line-height: 1.5;
+text-decoration: none;
+text-transform: uppercase;
+outline: 0;
+border: 0;
+padding: 1rem;
+}
+@media (max-width: 768px) {
+.button1 {
+font-size: 10px; /* Adjust margins */
+}
+}
+
+.button1:before {
+background-color: black;
+content: "";
+display: inline-block;
+height: 1px;
+margin-right: 10px;
+transition: all .42s cubic-bezier(.25,.8,.25,1);
+width: 0;
+}
+
+.button1:hover:before {
+background-color: black;
+width: 3rem;
+}
+.container1 {
+position: relative;
+opacity: 0.9;
+margin-right: 5px;
+}
+
+.hidden {
+display: none;
+}
+
+#myButton {
+padding: 1.3em 3em;
+margin-left: 36%;
+
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 2.5px;
+font-weight: 500;
+color: #000;
+background-color: #fff;
+border: none;
+border-radius: 45px;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease 0s;
+cursor: pointer;
+outline: none;
+}
+
+#myButton:hover {
+background-color: #23c483;
+box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+color: #fff;
+transform: translateY(-7px);
+}
+
+#myButton:active {
+transform: translateY(-1px);
+}
+
+
+
+.pozdrav{
+font-size: 25px;
+font-family: "Anta", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-style: italic;
+color: #fff;
+}
+
+.container1 img {
+width: 100%;
+height: auto;
+display: block;
+border-radius: 10px;
+
+}
+
+.btn {
+position: absolute;
+padding: 4px 3px;
+background-color:  #359538;
+color: white;
+border: none;
+border-radius: 5px;
+
+font-size: 1rem;
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+.btn {
+font-size: 0.7rem;
+}}
+.subdugme{
+position: absolute;
+padding: 10px 20px;
+background-color: #601284;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/* Adjust button positions as needed */
+#btn1 {
+position: absolute;
+top: 13%;
+right: 40%;
+}
+
+#btn2 {
+position: absolute;
+top: 13%;
+right: 31%;
+}
+
+#btn3 {
+position: absolute;
+top: 13%;
+right: 22%;
+}
+
+#btn4 {
+
+position: absolute;
+top: 13%;
+right: 12%;
+}
+
+#btn5 {
+
+position: absolute;
+top: 13%;
+right: 3%;
+}
+#btn6 {
+position: absolute;
+top: 35%;
+right:1%;
+}
+
+#btn7 {
+position: absolute;
+top: 57%;
+right:1%;
+}
+
+#btn8 {
+position: absolute;
+top: 33%;
+right: 15%;
+}
+
+#btn9 {
+position: absolute;
+top: 58%;
+right: 16%;
+}
+#btn10 {
+position: absolute;
+bottom: 17%;
+right: 7%;
+}
+
+#btn11 {
+position: absolute;
+bottom: 38%;
+right: 31%;
+
+}
+
+#btn12 {
+position: absolute;
+bottom: 25%;
+right: 31%;
+}
+#btn13 {
+position: absolute;
+bottom: 12%;
+right: 31%;
+}
+
+#btn14 {
+position: absolute;
+top: 29%;
+right: 42%;
+}
+
+#btn15 {
+position: absolute;
+bottom: 26%;
+right: 42%;
+}
+
+#btn16 {
+position: absolute;
+bottom: 11%;
+right: 60%;
+}
+#btn17 {
+position: absolute;
+bottom: 29%;
+right: 58%;
+}
+#btn18 {
+position: absolute;
+bottom: 29%;
+left: 25%;
+}
+
+#btn19 {
+position: absolute;
+bottom: 42%;
+left: 33%;
+}
+
+#btn20 {
+position: absolute;
+bottom: 14%;
+left: 5%;
+}
+
+#btn21 {
+position: absolute;
+bottom: 34%;
+left: 5%;
+}
+#btn22{
+position: absolute;
+top: 32%;
+left: 7%;
+}
+#btn23 {
+position: absolute;
+bottom: 23%;
+left: 4%;
+}
+
+#btn24 {
+position: absolute;
+bottom: 23%;
+left: 19%;
+}
+
+#btn25{
+position: absolute;
+bottom: 23%;
+left: 35%;
+}
+#btn26{
+position: absolute;
+bottom: 23%;
+left: 51%;
+}
+#btn27 {
+position: absolute;
+bottom: 23%;
+right: 23%;
+}
+
+#btn28{
+position: absolute;
+bottom: 23%;
+right: 15%;
+}
+#btn29{
+position: absolute;
+bottom: 43%;
+left: 10%;
+}
+#btn30 {
+position: absolute;
+bottom: 43%;
+left: 44%;
+}
+
+#btn31{
+position: absolute;
+bottom: 43%;
+right: 19%;
+}
+#btn32{
+position: absolute;
+bottom: 60%;
+left: 10%;
+}
+#btn33 {
+position: absolute;
+bottom: 60%;
+left: 44%;
+}
+
+#btn34{
+position: absolute;
+bottom: 60%;
+right: 19%;
+}
+#btn35{
+position: absolute;
+top: 14%;
+left: 4%;
+}
+#btn36 {
+position: absolute;
+top: 14%;
+left: 19%;
+}
+
+#btn37{
+position: absolute;
+top: 14%;
+left: 36%;
+}
+#btn38{
+position: absolute;
+top: 14%;
+right: 45%;
+}
+#btn39{
+position: absolute;
+top: 14%;
+right: 23%;
+}
+#btn40{
+position: absolute;
+top: 14%;
+right: 15%;
+}
+
+
+.btn-green {
+background-color: #359538; /* Green */
+color: white;
+}
+
+.btn-orange {
+background-color: orange;
+color: white;
+opacity: 0.9;
+
+}
+
+.btn-red {
+background-color: #359538;
+color: white;
+opacity: 0.9;
+border: 4px solid red;
+
+}
+
+
+
+.containersve {
+display: flex;
+flex-wrap: wrap;
+}
+
+.item {
+width: 50%; /* Each item takes half the width on large screens */
+box-sizing: border-box; /* Includes padding and border in the width */
+padding: 5px;
+border: 2px solid #1f2a40;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(31, 42, 64, 0.2);
+}
+
+/* Media query for screens smaller than 768px (typical phone screen width) */
+@media only screen and (max-width: 780px) {
+.item {
+width: 100%; /* Each item takes full width on smaller screens */
+}
+}
+
+.containersmesti {
+position: relative;
+width: min-content;
+height: min-content;
+}
+
+.containerodbi {
+    position: relative;
+    width: min-content;
+    height: min-content;
+    }
+
+
+
+
+
+
+.tabelarezervacija {
+border-collapse: separate;
+border-spacing: 0;
+width: 40%;
+margin: 20px auto;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+border-radius: 10px;
+overflow: hidden;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* Table Header */
+th {
+background-color: #5041AB; /* Soft Purple */
+color: #FFFFFF; /* White */
+padding: 12px 15px;
+text-align: left;
+font-size: 16px;
+letter-spacing: 0.5px;
+}
+
+/* Table Body */
+td {
+border-top: 1px solid #E3E4E8; /* Light Gray for separation */
+padding: 10px 15px;
+color: #333333; /* Darker Text Color */
+font-size: 14px;
+}
+
+/* Even Rows Background */
+tr:nth-child(even) {
+background-color: #F7F7FB; /* Very Light Purple/Gray */
+}
+
+/* Hover Over Rows */
+tr:hover {
+background-color: #EAEFFF; /* Very Soft Purple for Hover State */
+cursor: pointer;
+}
+
+/* First Column Styling */
+.tabelarezervacija td:first-child,
+.tabelarezervacija th:first-child {
+border-left: none;
+}
+
+/* Last Column Styling */
+.tabelarezervacija td:last-child,
+.tabelarezervacija th:last-child {
+border-right: none;
+}
+
+.shine {
+animation: shine-animation 1s infinite alternate;
+border-radius: 20px;
+height: auto;
+width: auto;
+}
+
+@keyframes shine-animation {
+from {
+background-color: transparent; /* Original color of the button */
+box-shadow: 0 0 10px transparent; /* Original shadow color */
+}
+to {
+background-color: #ffd700; /* Color when shining */
+box-shadow: 0 0 20px #ffd700; /* Shadow color when shining */
+}
+}
+
+.form-container {
+width: min-content;
+margin-right: 100px;
+margin: 0 auto;
+padding: 2px;
+background-color: #f9f9f9;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+
+}
+
+/* Form input fields */
+input[type='text'] {
+width: 100%;
+padding: 10px;
+margin: 8px 0;
+box-sizing: border-box;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+/* Form labels */
+label {
+font-weight: none;
+}
+
+/* Submit button */
+.dodajsto {
+background-color: #4caf50;
+color: white;
+padding: 5px 10px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+z-index: 1000;
+}
+
+.dodajsto:hover {
+background-color: #45a049;
+}
+
+
+.icon-container {
+position: relative;
+left: 93%;
+cursor: pointer;
+}
+#plus-icon {
+font-size: 3em;  
+}
+
+#reservations {
+position: absolute;
+    margin-top: -60px;
+    padding: 3px;
+    background-color: #f8f9fa;
+    width: max-content;
+    border: 1px solid #ddd;
+    color: black;
+    border-radius: 20px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    text-align: center;
+}
+#reservations i {
+  font-size: 25px;
+}

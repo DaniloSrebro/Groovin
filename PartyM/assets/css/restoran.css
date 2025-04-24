@@ -1,0 +1,258 @@
+body{
+  background: linear-gradient(to bottom, #ffffff, #c0c0c0);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+
+  #preloader{
+    background: #1c1d21 url(../img/preloaderhrana.gif) no-repeat center center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    opacity: 1; /* Fully visible */
+    transition: opacity 0.5s ease;
+  }
+  @media only screen and (max-width: 800px) {
+    #preloader{  
+      background-size: 120%;
+    }
+  }
+    
+
+
+  #reservation .section-heading {
+    margin-bottom: 30px;
+  }
+  
+  #reservation .section-heading h6 {
+    color: #fff;
+  }
+  
+  #reservation .section-heading h2 {
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  #reservation .section-heading h6:before {
+    background-color: #fff;
+  }
+  
+  #reservation p {
+    color: #fff;
+    margin-bottom: 65px;
+  }
+  
+  #reservation {
+    margin-top: 0px;
+    padding: 30px 0px;
+    background-image: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #reservation .phone,
+  #reservation .message {
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+  }
+  
+  #reservation .phone i,
+  #reservation .message i {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+    background-color: #FFA500;
+    border-radius: 50%;
+    font-size: 24px;
+    margin-top: -35px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #reservation .phone h4,
+  #reservation .message h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  #reservation .phone span a,
+  #reservation .message span a {
+    font-size: 14px;
+    color: #2a2a2a;
+    transition: all .3s;
+  }
+  
+  #reservation .phone span a:hover,
+  #reservation .message span a:hover {
+    color: #FF8C00;
+  }
+  
+  #kontakt {
+    margin-left: 30px;
+    padding: 45px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+   
+  }
+  
+  #kontakt h4 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    color: #2a2a2a;
+    margin-bottom: 30px;
+  }
+  
+  .datepicker-days {
+    padding: 30px;
+    cursor: pointer;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    color: #2a2a2a;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 100%;
+    height: 46px;
+    border-radius: 5px;
+    outline: none;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus,
+  .contact-form select:focus {
+    border-color: #FF8C00;
+  }
+  
+  .contact-form button {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #FF8C00;
+    padding: 12px 25px;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: all .3s;
+  }
+  
+  .contact-form button:hover {
+    opacity: .9;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    resize: none;
+    padding: 20px;
+  }
+  
+  .contact-form ::-webkit-input-placeholder { /* Edge */
+    color: #2a2a2a;
+  }
+  
+  .contact-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #2a2a2a;
+  }
+  
+  .contact-form ::placeholder {
+    color: #2a2a2a;
+  }
+  
+  
+  .spec{
+    margin-top: 30px;
+  }
+
+  
+  
+  
+  
+  @media (max-width: 992px) {
+   
+    #reservation .phone {
+   
+      margin-bottom: 60px;
+    }
+    #kontakt {
+      margin-left: 0px;
+      
+    }
+  }
+  @media (min-width: 992px) {
+    .gornji{
+      margin-top: 75px;
+    }
+   
+  }
+  
+  
+  .specijal{
+    position: relative;
+    border-radius: 30px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+    margin-bottom: 40px;
+  }
+  .specijal img{
+    position: relative;
+    width: 350px;
+    border-radius: 30px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin-bottom: 40px;
+    border: 3px solid white;
+  }
+  
+  @media only screen and (max-width: 800px) {
+      
+    iframe{
+      width: 100%;
+    }
+    /* .specijal{
+      width: max-content;
+    } */
+    .specijal img{
+      width: 100%;
+      border-radius: 30px;
+    }
+  }
+  
+
+  .highlight {
+    background-color: #FFA50080;
+    color: #000000;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+  }

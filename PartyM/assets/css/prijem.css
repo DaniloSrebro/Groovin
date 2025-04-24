@@ -1,0 +1,35 @@
+.reservation-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Reservation details */
+.reservation-details {
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px; /* Add spacing between buttons */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Separate buttons for approve and reject */
+.approve-button {
+    background-color: #28a745; /* Green */
+}
+
+.reject-button {
+    background-color: #dc3545; /* Red */
+}

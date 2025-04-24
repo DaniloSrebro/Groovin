@@ -1,0 +1,233 @@
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-image: url(../img/backkk.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+   
+             font-family: "PT Sans", sans-serif;
+              
+            font-style: italic;
+            overflow-x: hidden;
+  }
+  
+  .pozdrav{
+  
+    font-family: Arial, sans-serif; /* Choose your preferred font-family */
+      font-size: 24px; /* Adjust the font size as needed */
+      color: #333; /* Choose your preferred text color */
+      text-align: center;
+      
+  }
+  
+
+
+  #preloader{
+    background: #1c1d21 url(../img/preloaderhrana.gif) no-repeat center center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+  }
+  
+  
+  
+  
+  .text-container {
+          position: relative;
+          width: 90%;
+          height: 180px;
+          margin-left: 5%;
+          margin-top: 5%;
+          border-top-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          border: 1px solid black;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          background-color: rgba(255, 255, 255, 0.5);
+      }
+  
+      .top-text {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+  
+      .bottom-left-text {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 10px;
+      }
+  
+      .bottom-right-text {
+          position: absolute;
+          bottom: 0;
+          left: 33%;
+          padding: 10px;
+      }
+      .top-half-image {
+          position: absolute;
+          top: 15%;
+          right: 40px;
+          width: 30%; /* Take full width */
+          height: 70%; /* Take half of the container height */
+          object-fit: cover; /* Ensure the image covers the container */
+          border-radius: 20px;
+      }
+  
+  
+      .full-height {
+        height: 100vh; /* 100% height of viewport */
+      }
+      .thirty-percent-height {
+        height: 30vh; /* 30% height of viewport */
+      }
+
+      
+  
+      
+
+      .container1{
+        position: relative;
+        background-color: transparent;
+        border-radius: 15px;
+        color: black;
+        margin: 10px;
+        padding-left: 10px;
+    
+      }
+      @media only screen and (max-width: 800px) {
+    .container1{
+      border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        
+    }
+    #preloader{  
+      background-size: 120%;
+    }
+    }
+    
+    .filter{
+      color:white;
+      font-size:20px;
+      margin-top: auto;
+      font-style: italic;
+    }
+    
+    
+    
+    .form-check-input {
+                opacity: 0;
+                position: absolute;
+            }
+    
+            /* Create a custom checkbox appearance */
+            .form-check-input + .form-check-label::before {
+                content: '';
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+                border-radius: 4px; /* Rounded corners */
+                border: 2px solid #4b137d; /* Border color */
+                background-color: #fff; /* Background color */
+                vertical-align: bottom;
+                
+            }
+    
+            /* Change the custom checkbox appearance when */
+            .form-check-input:checked + .form-check-label::before {
+                background-color: #4b137d; /* Background color when checked */
+                border-color: #4b137d;
+                 /* Border color when checked */
+            }
+    
+            /* Optional: Add a "checked" indicator, like a check mark or color fill */
+            .form-check-input:checked + .form-check-label::after {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 11px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                transform: rotate(45deg);
+                left: 7px;
+                top: 5px;
+               
+            }
+    
+            .filterr{
+              color:black;
+              margin-top:20px;
+              
+             
+            }
+    
+            .zvezde{ 
+                margin-left: 0px;
+                margin-top: -7px;
+              }
+    
+            .maliekran{
+              display: none;
+              font-size: 13px;
+              margin-left: -10px;
+              margin-bottom: 5px;
+              font-style: normal;
+            }
+    
+            @media only screen and (max-width: 800px) {
+              .filterr{
+                margin-top: 0px;
+              }
+              .text-container p{
+                display: none;
+              }
+              .zvezde{ 
+                margin-left: 0px;
+                margin-top: 15px;
+              }
+              .bottom-right-text{
+                margin-left: -30%;
+              }
+              .reviews{
+                display: none;
+              }
+              .top-half-image {
+              top: 0%;
+              right: 0px;
+              width: 50%; /* Take full width */
+              height: 100%; 
+              border-top-right-radius: 20px;
+              border-bottom-right-radius: 0px;
+              border-top-left-radius: 0px;
+              border-bottom-left-radius: 0px;/* Take half of the container height */
+          }
+          .text-container {
+              height: 150px;
+          }
+          .maliekran{
+              display: block;
+            }
+              
+            }
+    
+            #tocionica {
+              transition: color 0.5s ease;
+          }
+          #tocionica:hover {
+              color: goldenrod;
+          }
+      

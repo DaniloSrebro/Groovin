@@ -1,0 +1,104 @@
+body {
+    background-color: #141b2d;
+    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: italic;
+}
+
+
+
+.noverezervacije{
+font-style: normal;
+}
+
+.vrstarezervacije{
+font-size: smaller;
+}
+
+
+a i {
+color: #9a9a9a;
+}
+a i:hover {
+color: #fff;
+}
+.badge-success {
+background-color: #00d68f;
+}
+.table {
+border-collapse: separate;
+border-spacing: 0 15px;
+color: rgba(255,255,255,0.7);
+}
+thead tr th {
+border-bottom:0 !important;
+background-color: #192038 !important;
+font-weight: bold !important;
+color: #aab1c1 !important;
+}
+.table td{
+background-color: #1f2a40 !important;
+color: #bbc0c6;
+font-weight: normal !important;
+
+}
+.table tr {
+box-shadow: 0 1px 20px 0 rgb(0 0 0 / 10%);
+background-color: #1f2940;
+border-radius:20px;
+}
+
+.text-muted{
+color: #6c7480 !important;
+}
+.table td,
+.table th {
+vertical-align: middle;
+}
+tr td:nth-child(n+9),tr th:nth-child(n+9) {
+  border-radius: 0 .625rem .625rem 0;
+}
+tr td:nth-child(1),tr th:nth-child(1){border-radius: .625rem 0 0 .625rem;text-align: center;}
+
+tr td:nth-child(3),
+tr td:nth-child(4),
+tr td:nth-child(5),
+tr td:nth-child(6),
+tr td:nth-child(7),
+tr td:nth-child(8),
+tr td:nth-child(9),
+tr th:nth-child(3),
+tr th:nth-child(4),
+tr th:nth-child(5),
+tr th:nth-child(6),
+tr th:nth-child(7),
+tr th:nth-child(8),
+tr th:nth-child(9){
+text-align: center;
+}
+
+
+
+
+.table td,
+.table th,
+.card {
+border: 0;
+}
+.w-48 {
+width: 3rem;
+}
+.-ml-5 {
+margin-left: -1.25rem;
+}
+.h-48 {
+height: 3rem;
+}
+.thump img {
+height: 100%;
+-o-object-fit: cover;
+object-fit: cover;
+width: 100%;
+}

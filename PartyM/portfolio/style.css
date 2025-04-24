@@ -1,0 +1,211 @@
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: white !important; 
+    height: 100vh;
+ 
+}
+
+main {
+    background-color: white; /* Remove !important */
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.slider {
+    background: linear-gradient(to right, rgb(50, 137, 168), rgb(103, 44, 156));
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+
+}
+
+
+.intro-text {
+    color: aliceblue;
+    font-family: 'BhuTuka Expanded One', cursive !important; 
+    font-size: 3rem !important;
+    font-weight: 600; 
+}
+
+
+.hide {
+    background: black;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+
+}
+
+.intro-text h1, .intro-text h1 span.text {
+    font-family: 'BhuTuka Expanded One', cursive !important;
+    font-size: inherit; 
+    font-weight: inherit;
+    color: inherit; 
+}
+
+.video-modal {
+    z-index: 9999 !important;
+}
+
+.img-fluid{
+    width: 50%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .intro-text {
+        color: aliceblue;
+        font-family: 'BhuTuka Expanded One', cursive;
+        font-size: 2rem !important;
+        
+    }
+    .img-fluid{
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+}
+.play-icon {
+    font-size: 48px; /* Adjust icon size as needed */
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%);
+    pointer-events: none; /* Ensures click goes through to the thumbnail */
+}
+
+
+
+
+.bg-circle {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(40px);
+            opacity: 0.2;
+        }
+
+        .bg-circle.top-right {
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            background-color: #6f42c1; 
+        }
+
+        .bg-circle.bottom-left {
+            bottom: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+            background-color: #007bff; 
+        }
+
+        .bg-circle.top-right1 {
+            bottom: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            background-color: #42c171; 
+        }
+
+        .bg-circle.bottom-left1 {
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+            background-color: #751e1e; 
+        }
+
+        .profile-card {
+            position: relative;
+            overflow: hidden;
+            
+            padding: 30px;
+            background-color: #343a40; 
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 128px;
+            height: 128px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #6f42c1, #007bff);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .skills span {
+            padding: 8px 12px;
+            font-size: 0.9rem;
+            margin: 5px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .profile-card1 {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 15px;
+           
+            padding: 30px;
+            background-color: #343a40; 
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none; 
+            padding: 0; 
+            margin: 0; 
+        }
+
+        .profile-card1 {
+            scale: .8; opacity: 1;
+            animation: fade-in linear forwards;
+            animation-timeline: view();
+            animation-range: 100px 500px;
+          }
+          
+          @keyframes fade-in{
+            to{scale: 1; opacity: 1;}
+          }
+       

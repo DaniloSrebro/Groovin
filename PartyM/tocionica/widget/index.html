@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="../../assets/img/logo2.png" rel="icon">
+    <link href="../../assets/img/logo2.png" rel="apple-touch-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Točionica</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .odabir{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding-right: 1px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title"><img src="./logotocionica.png" id="slika" alt="" ></h3>
+          
+
+          <div class="info">
+            <div class="information">
+              <p>*Napomena: rezervišite minimalno 2 sata unapred</p>
+            </div>
+            <div class="information">
+              <p>Radni Sati: <br> Ponedeljak: 08:00-23:00 <br> Utorak: 08:00-23:00 <br> Sreda: 08:00-23:00 <br> Četvrtak: 08:00-23:00 <br> Petak: 08:00-00:00 <br> Subota: 08:00-00:00 <br> Nedelja: 09:00-23:00 <br>Rad kuhinje: 1h i 15min pre zatvaranja lokala</p>
+            </div>
+            <div class="information">
+              <p>Jela: Burgeri i Specijaliteti <br><button class="cta">
+                <span class="hover-underline-animation"> Jelovnik </span>
+                <svg
+                  id="arrow-horizontal"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="10"
+                  viewBox="0 0 46 16"
+                >
+                  <path
+                    id="Path_10"
+                    data-name="Path 10"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    transform="translate(30)"
+                  ></path>
+                </svg>
+              </button></p>
+            </div>
+            <div class="information">
+              <p>Pića: Domaći Sokovi, Kraft Piva.. <br>
+                <a href="../kartapica.pdf" target="_blank"><button class="cta">
+                <span class="hover-underline-animation"> Karta Pića </span>
+                <svg
+                  id="arrow-horizontal"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="10"
+                  viewBox="0 0 46 16"
+                >
+                  <path
+                    id="Path_10"
+                    data-name="Path 10"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    transform="translate(30)"
+                  ></path>
+                </svg>
+              </button></a></p>
+            </div>
+            <div class="information">
+              <p>Slike Lokala: <br><button class="cta">
+                <span class="hover-underline-animation"> Galerija </span>
+                <svg
+                  id="arrow-horizontal"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="10"
+                  viewBox="0 0 46 16"
+                >
+                  <path
+                    id="Path_10"
+                    data-name="Path 10"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    transform="translate(30)"
+                  ></path>
+                </svg>
+              </button></p>
+            </div>
+            <div class="information">
+              <i class="fas fa-phone"></i>&nbsp&nbsp
+              <p>021/3039-226</p>
+            </div>
+            
+            <div class="information">
+              <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
+
+              <p>Narodnog Fronta 2, Novi Sad</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.258820938909!2d19.84437227609204!3d45.24255877107125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b11566afa63c9%3A0x2febff958a5f3694!2sTO%C4%8CIONICA%20Liman!5e0!3m2!1sen!2srs!4v1710435887060!5m2!1sen!2srs" width="350" height="100" style="border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+
+          
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/tocionicaPab/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/pab_tocionica/?hl=en" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.tiktok.com/@tocionica?lang=en" target="_blank">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+          <p style="font-style: italic;font-size: smaller;">More info on <a href="http://localhost/PartyM/Groovin/PartyM/tocionica/tocionica.php" style="color: blueviolet;text-decoration: none; font-style: italic;">Party M-Točionica</a></p>
+          
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="./process-reservation_tocionica.php" method="post">
+            <h3 class="title">Rezerviši</h3>
+
+			<div class="input-container">
+        <p style="color: white;">Datum:</p>
+				<input type="date" id="zadatum" name="zadatum" class="input" required/>
+    <label for="zadatum"></label>
+				<span></span>
+			  </div>
+
+			  <div class="input-container">
+          <p style="color: white;">Vreme dolaska:</p>
+          <input type="time" id="vremedolaska" name="vremedolaska" class="input" min="08:00" max="23:00" required/>
+          <label for="vremedolaska"></label>
+          <span></span>
+      </div>
+        
+
+            <div class="input-container">
+              <input type="text" name="ime" class="input" required/>
+              <label for="ime">Ime</label>
+              <span>Ime</span>
+            </div>
+
+            <div class="input-container">
+              <input type="email" name="email" class="input" required/>
+              <label for="email">Email</label>
+              <span>Email</span>
+            </div>
+            <p style="font-size: 11px;color: white; font-style: italic;">* molimo Vas da proverite ispravnost unetog mejla, jer na njega dobijate potvrdu o rezervaciji.</p>
+            <div class="input-container">
+              <input type="tel" name="brojtelefona" class="input" required />
+              <label for="brojtelefona">Telefon</label>
+              <span>Telefon</span>
+            </div>
+
+			  <div class="input-container">
+          <input type="number" name="brojljudi" class="input" min="1" max="12" required/>
+          <label for="brojljudi">Broj Ljudi</label>
+          <span>Broj Ljudi</span>
+			  </div>
+
+        
+
+			  <div class="odabir">
+          <div class="odabir1">
+				<label for="vrstarez">Odaberite opciju:</label>
+												<div class="form-check">
+													<input class="form-check-input" type="radio" name="vrstarez" id="option1" value="Piće" checked>
+													<label class="form-check-label" for="option1">
+														Piće
+													</label>
+													</div>
+												<div class="form-check">
+													<input class="form-check-input" type="radio" name="vrstarez" id="option2" value="Piće i Hrana">
+													<label class="form-check-label" for="option2">
+														Piće i Hrana
+                          </label>
+                          </div>
+                        </div>
+
+
+<div class="odabir2">
+			  <label for="sedenje">Sedenje:</label>
+												<div class="form-check">
+													<input class="form-check-input" type="radio" name="sedenje" id="option1" value="nisko" checked>
+													<label class="form-check-label" for="option1">
+														Nisko
+													</label>
+													</div>
+												<div class="form-check">
+													<input class="form-check-input" type="radio" name="sedenje" id="option2" value="visoko">
+													<label class="form-check-label" for="option2">
+														Visoko
+													</label></div>
+                        </div>
+                        </div>
+
+                        <br>
+                          <span class="form-label"><label for="mestosedenja" style="color: white; padding-left: 20%;">Mesto Sedenja:</label></span>
+			  <select id="mestosedenja" name="mestosedenja" class="form-control" style="border-radius: 10px;">
+				  <option selected>Unutra</option>
+				  <option>Bašta</option> 
+			  </select>
+        <br>
+        <br>
+
+            <input type="submit" value="Pošalji" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <p style="font-style: italic;font-size: smaller;">Created By <a href="http://localhost/PartyM/Groovin/PartyM/index.php" style="color: blueviolet;text-decoration: none; font-style: italic;">Party M</a></p>
+
+    <script src="./app.js"></script>
+
+
+    <script>
+      // Get the current time
+      var currentTime = new Date();
+  
+      // Add two hours to the current time
+      var twoHoursLater = new Date(currentTime.getTime() + (2 * 60 * 60 * 1000));
+  
+      // Format the time to HH:MM
+      var hours = twoHoursLater.getHours();
+      var minutes = twoHoursLater.getMinutes();
+      var formattedTime = (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
+  
+      // Set the value of the input field to the calculated time
+      document.getElementById("vremedolaska").value = formattedTime;
+  </script>
+
+    
+    
+
+    <script>
+      window.onload = function() {
+          var today = new Date();
+          var maxDate = new Date();
+
+          // Set the maxDate to 6 days in the future
+          maxDate.setDate(today.getDate() + 6);
+
+          // Format dates as 'YYYY-MM-DD' to set min and max attributes
+          var minDateStr = today.toISOString().split('T')[0];
+          var maxDateStr = maxDate.toISOString().split('T')[0];
+
+          // Set the min and max attributes
+          document.getElementById('zadatum').setAttribute('min', minDateStr);
+          document.getElementById('zadatum').setAttribute('max', maxDateStr);
+      }
+  </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var today = new Date();
+          var dd = String(today.getDate()).padStart(2, '0');
+          var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+          var yyyy = today.getFullYear();
+      
+          today = yyyy + '-' + mm + '-' + dd;
+          document.getElementsByName('zadatum')[0].value = today;
+      });
+      </script>
+
+
+  </body>
+</html>
