@@ -44,11 +44,12 @@ PartyM is a modern web application built for making reservations in restaurants 
 ### Reservation Manager page for upcoming approved reservation with chart.js
 ![Manager](screenshots/pregled.png)
 
-### Reservation Manager page for upcoming approved reservation with chart.js
-![Manager](screenshots/pregled.png)
-
 ### Profile Page before restaurant approves the reservation
 ![Profile Page](screenshots/profilrez1.png)
 
-### Profile Page before restaurant approves the reservation
+### After the reservation is approved by the restaurant, users can view the details on their profile page.  
+They also have the option to notify the restaurant if they will be late, and after the visit,  
+they can rate their reservation experience. 
 ![Profile Page](screenshots/profilrez2.png)
+
+
