@@ -52,4 +52,11 @@ They also have the option to notify the restaurant if they will be late, and aft
 they can rate their reservation experience. 
 ![Profile Page](screenshots/profilrez2.png)
 
+### Email Confirmation
+![Email](screenshots/email1.png)
+![Email](screenshots/email2.png)
+
+### PM2
+![PM2](screenshots/pm2.png)
+
 
