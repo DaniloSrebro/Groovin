@@ -1,24 +1,54 @@
-Overview
-This is a web application that allows users to make reservations at various restaurants across Novi Sad. The app enables users to enter their details and reserve a table. Once the reservation is approved, users receive a confirmation email. The application is built using HTML, CSS, JavaScript, PHP, MySQL, and Node.js.
+# PartyM - Web App for Restaurant Reservations
 
-Features
-User Registration & Authentication: Users can create accounts, log in, and manage their reservations.
+PartyM is a modern web application built for making reservations in restaurants across Novi Sad. The app eliminates the outdated phone-call method and allows users to book tables online in a few easy steps. It also has 3 different logins, everything tracked, and user friendly ui.
 
-Restaurant Reservation: Users can browse available restaurants, select a time, and make reservations.
+## 🌟 Features
 
-Email Confirmation: Users receive email confirmations for their reservations.
+- 📅 Browse available time slots for different restaurants
+- ✅ Instant reservation confirmation
+- 🔐 User login and profile management
+- 💬 Admin dashboard for managing reservations
+- 📊 Dynamic chart display (Chart.js) of daily reservations
+- 🕒 Time-sensitive color coding for late or upcoming reservations
+- 📥 Email notification system (Node.js)
+- 🖼️ Profile photo upload feature
 
-Admin Panel: Restaurant managers can approve or decline reservations.
+## 🔧 Technologies Used
 
-Reservation Points System: Users earn points based on whether they honor their reservations and follow terms of service.
+- **Frontend**: HTML, CSS, Bootstrap, JavaScript
+- **Backend**: PHP, MySQL
+- **Email**: Node.js (nodemailer)
+- **Charts**: Chart.js
+- **Session Management**: PHP sessions
+- **Hosting**: WAMP / XAMPP locally (dev) & GitHub for versioning
 
-Tech Stack
-Frontend: HTML, CSS, JavaScript (Vanilla JS)
+## 💡 How It Works
 
-Backend: PHP, Node.js
+1. A user selects a restaurant and time slot.
+2. The system checks availability and reserves the table.
+3. Admin can approve or reject reservations.
+4. Approved users receive an email confirmation.
+5. Reservations are displayed dynamically with time-based insights.
 
-Database: MySQL
+## 📸 Screenshots
 
-Email: Node.js for email handling
+### Homepage
+![Homepage](screenshots/index.png)
 
-Authentication: PHP session management
+### Reservation
+![Reservation Page](screenshots/rez.jpg)
+
+### Restaurant Manager page for upcoming reservations
+![Manager](screenshots/menadzer.png)
+
+### Reservation Manager page for upcoming approved reservation with chart.js
+![Manager](screenshots/pregled.png)
+
+### Reservation Manager page for upcoming approved reservation with chart.js
+![Manager](screenshots/pregled.png)
+
+### Profile Page before restaurant approves the reservation
+![Profile Page](screenshots/profilrez1.png)
+
+### Profile Page before restaurant approves the reservation
+![Profile Page](screenshots/profilrez2.png)
